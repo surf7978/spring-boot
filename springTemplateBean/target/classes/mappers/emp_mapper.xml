@@ -64,7 +64,7 @@
 	
 	<!-- jobid select option -->
 	<select id="jobSelect" 	
-	        resultType="co.company.spring.dao.Jobs">
+	        resultType="Jobs">
 			SELECT JOB_ID, JOB_TITLE
 			  FROM JOBS
 			 ORDER BY JOB_ID 
