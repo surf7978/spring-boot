@@ -9,5 +9,4 @@ public class BootOracleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BootOracleApplication.class, args);
 	}
-
 }

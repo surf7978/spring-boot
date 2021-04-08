@@ -34,13 +34,13 @@ public class ReplyRepositoryClient {
 		//여기서 쓰는 sql은 jpql로 써야함
 		//EntityManager에서 persist merge remove find가 CRUD임
 		//https://docs.spring.io/spring-data/jpa/docs/2.4.7/reference/html/#jpa.query-methods.query-creation 여기서 명령어 참조하기
-		List<Reply> list = repository.findAll();
+		Iterable<Reply> list = repository.findAll();
 		System.out.println(list);
 	}
 	
 	@Test
 	public void 제목조회() {
-		List<Reply> list = repository.findByTitle("test4");
-		System.out.println(list);
+		//List<Reply> list = repository.findByTitle("test4");
+		//System.out.println(list);
 	}
 }
